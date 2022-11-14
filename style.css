@@ -155,6 +155,11 @@ header h1{
     border-radius: 25px;
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    transition: .5s ease;
+}
+
+.sidebar a:hover{
+    transform: scale(1.2);
 }
 .sidebar img{
     height: 45px;
