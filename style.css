@@ -11,8 +11,8 @@ body{
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns: 1fr 1fr 15px 1fr 1fr;
-    grid-template-rows: 1.8fr 50px 15px 2fr 1fr 45px;
+    grid-template-columns: 1fr 1fr 150px 1fr 1fr;
+    grid-template-rows: 1fr 150px 50px 50px 50px 50px 45px;
 }
 header{
     display: flex;
@@ -45,42 +45,61 @@ header h1{
 }
 
 #profile_index{
-    grid-area: 3 / 3;
+    grid-area: 2 / 3;
     margin: auto;
     
 }
 #profile_index img{
-    width: 10px;
+    width: 100px;
     height: auto;
     border-radius: 50%;
-    transform: scale(13);
+    transition: transform ease 0.8s;
 
 }
+#profile_index:hover > img{
+    transform: translate(-115px);
+}
+#profile_index:hover > #inner_container{
+    transform: translate(0, -100px);
+    opacity: 1;
+    
+}
+
+
 #inner_container{
     display: grid;
-    grid-template-columns: 1fr 10px 1fr;
-    grid-template-rows: 1fr 10px 1fr;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 4;
+    gap:7px;
+    opacity: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:6;
+    transition: opacity 0.5s linear, transform ease 0.8s; 
 }
 
 #inner_container > a:hover{
-    transform: scale(1.05);
-    transition: transform .5s ease;
+   /*transition: transform .5s ease;*/
+    box-shadow: inset 150px 0 0 0 #54b3d6;
+    color: white;
+    
 }
 
-#inner_container > a{
-    height: 100%;
+#inner_container a{
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
-    border-radius: 25px;
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
 }
+/*
 #menu_first{
     grid-area: 1 / 1;
 }
@@ -107,7 +126,7 @@ header h1{
     background-color: #8BC6EC;
     background-image: linear-gradient(315deg, #8BC6EC 0%, #9599E2 100%);
 }
-
+*/
 .container{
     display: grid;
     height: auto;
