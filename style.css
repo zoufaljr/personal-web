@@ -186,8 +186,8 @@ header h1{
     font-size: 1.1vw;
 }
 .item img{
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 100px;
 }
 .item .logo{
     grid-row-start: 1;
