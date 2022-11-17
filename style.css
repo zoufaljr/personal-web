@@ -266,7 +266,7 @@ header h1{
     height: auto;
     width: 125px;
 }
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 770px){
     .item img{
         height: auto;
         width: 75px;
