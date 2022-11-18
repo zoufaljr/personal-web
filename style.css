@@ -285,6 +285,9 @@ header h1{
 .item ul li{
     margin-bottom: 7px;
 }
+.item p{
+    font-size:calc(1.5vmin + 0.2em);
+}
 #contact_list{
     display: flex;
     flex-direction: row;
@@ -347,20 +350,29 @@ footer a{
     color:white;
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 760px){
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
     .item img{
         height: auto;
-        width: 50px;
+        width: 60px;
     }
     #profile_img{
     width: 75px;
     height: auto;
     }
+    .item .logo{
+        align-items: center;
+    }
     .container{
         display: grid;
         height: 100vh;
         width: 100vw;
-        grid-template-columns: 0.1fr 50px 1fr 10px;
+        grid-template-columns: 0.1fr 100px 1fr 10px;
         grid-template-rows: 45px 1fr 2fr 1fr 1fr 45px;
         gap: 30px;
         background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -407,4 +419,8 @@ footer a{
 		transform-origin: 100% 0;
 		transition:.2s ease;
 }
+}
+@media only screen and (max-width: 760px){
+
+
 }
