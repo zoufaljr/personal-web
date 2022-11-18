@@ -372,10 +372,13 @@ footer a{
         display: grid;
         height: 100vh;
         width: 100vw;
-        grid-template-columns: 0.1fr 100px 1fr 10px;
+        grid-template-columns: 10px 100px 1fr 10px;
         grid-template-rows: 45px 1fr 2fr 1fr 1fr 45px;
         gap: 30px;
         background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    }
+    .content_container{
+        overflow-x: hidden;
     }
     .sidebar{
         grid-template-columns: 1fr;
@@ -419,8 +422,4 @@ footer a{
 		transform-origin: 100% 0;
 		transition:.2s ease;
 }
-}
-@media only screen and (max-width: 760px){
-
-
 }
