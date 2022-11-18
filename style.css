@@ -249,7 +249,6 @@ header h1{
     display: grid;
     gap:15px;
     align-items: center;
-    
     margin-bottom:150px;
     margin-top: 200px;
     background-color: #7a7c7d;
@@ -266,11 +265,17 @@ header h1{
 .item img{
     height: auto;
     width: 125px;
+    justify-self: center;
 }
 
 .item .logo{
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+#tiny_house{
+   width: 250px;
+   height: auto;
 }
 .item ul{
     grid-area: 2/2;
@@ -305,7 +310,7 @@ header h1{
   border-top: none;
   border-right: 1px black solid;
   border-bottom: 1px black solid;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
   animation-iteration-count: infinite;
   animation-name: arrow; 
   
