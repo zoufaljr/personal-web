@@ -136,7 +136,7 @@ header h1{
 #profile_img:hover{
     transform: scale(1.15);
 }
-.sidebar{
+aside{
     grid-area: 3/2;
     display: grid;
     gap:10px;
@@ -147,7 +147,7 @@ header h1{
     transition:  transform ease 0.8s; 
 }
 
-.sidebar > a{
+aside > a{
     display: flex;
     height: 100%;
     align-items: center;
@@ -157,10 +157,11 @@ header h1{
     color: #7a7c7d;
     margin: 0 .25rem;
     padding: 0 .25rem;
+    
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.sidebar a:hover, .sidebar a:active, .sidebar a:focus {
+aside a:hover, aside a:active, aside a:focus {
     box-shadow: inset 200px 0 0 0 #808587;
     color: white;
 }
@@ -195,12 +196,12 @@ header h1{
 		transform-origin: 100% 0;
 		transition:.2s ease;
 }
-.sidebar a:hover #back_arrow::after, .sidebar a:active #back_arrow::after, .sidebar a:focus #back_arrow::after{
+aside a:hover #back_arrow::after, aside a:active #back_arrow::after, aside a:focus #back_arrow::after{
         transform: rotate(45deg);
 		border-color: white;
 		height: 150%;
 }
-.sidebar a:hover #back_arrow::before, .sidebar a:active #back_arrow::before, .sidebar a:focus #back_arrow::before{
+aside a:hover #back_arrow::before, aside a:active #back_arrow::before, aside a:focus #back_arrow::before{
     border-color: white;
     transform: scale(1);
 }
@@ -254,7 +255,7 @@ header h1{
     background-color: #7a7c7d;
     color: white;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .item h2{
     display: flex;
@@ -361,6 +362,8 @@ footer a{
         display: flex;
         flex-direction: column;
         padding: 5px;
+        font-size: calc(2vmin + 0.2em);
+        flex-shrink: 1;
     }
     .item img{
         height: auto;
@@ -385,10 +388,10 @@ footer a{
     .content_container{
         overflow-x: hidden;
     }
-    .sidebar{
+    .aside{
         grid-template-columns: 1fr;
     }
-    .sidebar >a{
+    .aside >a{
         font-size: 10px;
     }
     #tiny_house{
@@ -427,4 +430,20 @@ footer a{
 		transform-origin: 100% 0;
 		transition:.2s ease;
 }
+}
+
+@media only screen and (max-width:364px){
+    .container{
+        grid-template-columns: 5px 0.5fr 1fr 5px;
+        gap: 5px;
+    }
+    .item img{
+        display: none;
+    }
+    .item{
+        font-size: calc(1vmin + 0.2em);
+    }
+    h1{
+        font-size: 15px;
+    }
 }
