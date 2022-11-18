@@ -267,10 +267,7 @@ header h1{
     justify-self: center;
 }
 
-.item .logo{
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
+
 
 #tiny_house{
    width: 250px;
@@ -290,8 +287,16 @@ header h1{
 }
 #contact_list{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    align-items: center;
 }
+#contact_list a{
+    margin: 20px;
+    padding: 10px;
+    background-color: #ebedee;
+    border-radius: 25px; 
+}
+
 .arrow{
     width: 40px;
     height: 40px;
@@ -362,8 +367,8 @@ footer a{
         width: 60px;
     }
     #profile_img{
-    width: 75px;
-    height: auto;
+        width: 70px;
+        height: auto;
     }
     .item .logo{
         align-items: center;
@@ -372,7 +377,7 @@ footer a{
         display: grid;
         height: 100vh;
         width: 100vw;
-        grid-template-columns: 10px 100px 1fr 10px;
+        grid-template-columns: 10px 80px 1fr 10px;
         grid-template-rows: 45px 1fr 2fr 1fr 1fr 45px;
         gap: 30px;
         background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
