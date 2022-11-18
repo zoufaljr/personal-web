@@ -371,6 +371,10 @@ footer a{
     .sidebar >a{
         font-size: 10px;
     }
+    #tiny_house{
+        width: 100px;
+        height: auto;
+     }
     
     #back_arrow{
         margin-top: 7px;
