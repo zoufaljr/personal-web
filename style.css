@@ -267,13 +267,11 @@ aside a:hover #back_arrow::before, aside a:active #back_arrow::before, aside a:f
     width: 125px;
     justify-self: center;
 }
-
-
-
 #tiny_house{
    width: 250px;
    height: auto;
 }
+
 .item ul{
     grid-area: 2/2;
     font-size:calc(1.5vmin + 0.2em);
@@ -295,7 +293,11 @@ aside a:hover #back_arrow::before, aside a:active #back_arrow::before, aside a:f
     margin: 20px;
     padding: 10px;
     background-color: #ebedee;
-    border-radius: 25px; 
+    border-radius: 10px; 
+}
+#contact_list img{
+    height: auto;
+    width: 60px;
 }
 
 .arrow{
@@ -376,6 +378,12 @@ footer a{
     .item .logo{
         align-items: center;
     }
+    #contact_list a{
+        margin: 10px;
+        padding: 10px;
+        background-color: #ebedee;
+        border-radius: 10px; 
+    }
     .container{
         display: grid;
         height: 100vh;
@@ -416,8 +424,8 @@ footer a{
 		transition: .2s ease;
 		display: block;
 		transform-origin: 100% 0;
-}
-#back_arrow::after{
+    }
+    #back_arrow::after{
         content: '';
 		float: left;
 		position: relative;
@@ -429,7 +437,7 @@ footer a{
 		border-color: #7a7c7d;
 		transform-origin: 100% 0;
 		transition:.2s ease;
-}
+    }
 }
 
 @media only screen and (max-width:364px){
