@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*CSS rule for screen*/
+
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -516,19 +517,5 @@ footer a {
     #contact_list img {
         width: 30px;
         height: auto;
-    }
-}
-
-/*Print styling*/
-@media print {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    img {
-        height: auto;
-        width: 100px;
     }
 }
